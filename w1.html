@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Internet Basics</title>
+    <link rel="icon" type="image/png" href="assets/Engineering_Workshop_14_OCT.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/a11y-dark.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/progress/progress.min.css">
+
+    <style>
+        :root {
+            --background-color: #1a3a1a; /* Dark green background */
+            --text-color: #f5e8c9; /* Beige text */
+            --heading-color: #d9c9a3; /* Slightly darker beige for headings */
+            --link-color: #b8a369; /* Muted gold for links */
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: 'Georgia', serif;
+        }
+
+        .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+            color: var(--heading-color);
+            font-family: 'Palatino', 'Palatino Linotype', serif;
+        }
+
+        .reveal a {
+            color: var(--link-color);
+        }
+
+        .reveal .controls {
+            color: var(--heading-color);
+        }
+
+        .reveal .progress {
+            color: var(--heading-color);
+        }
+
+        .reveal .slides {
+            /* Remove the border */
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h2>Internet Basics</h2>
+                <p>Understanding the Basics</p>
+            </section>
+
+            <section data-markdown>
+                <textarea data-template>
+                ## What is the Internet?
+            </textarea>
+            </section>
+
+            <section>
+                <ul>
+                    <li>Network of interconnected devices</li>
+                    <li>Developed in the 1960s by US Department of Defense</li>
+                    <li>Decentralized communication network</li>
+                    <li>Connects computers and devices worldwide</li>
+                </ul>
+            </section>
+ 
+            <section>
+                <h3>Components of the Internet</h3>
+                <ul>
+                    <li class="fragment fade-right"><strong>Clients</strong>: PCs, smartphones, tablets</li>
+                    <li class="fragment fade-up"><strong>Servers</strong>: Host websites, store data, run applications</li>
+                    <li class="fragment fade-down"><strong>Routers</strong>: Direct data packets</li>
+                    <li class="fragment fade-left"><strong>IP Addresses</strong>: Unique identifiers for devices</li>
+                    <li class="fragment zoom-in"><strong>DNS</strong>: Translates domain names to IP addresses</li>
+                    <li class="fragment fade-in-then-out"><strong>Data centers</strong>: Physical infrastructure</li>
+                    <li class="fragment highlight-blue"><strong>ISPs</strong>: Provide internet access to users</li>
+                </ul>
+            </section>
+            <section>
+                <section>
+                    <h2>How Data Travels</h2>
+                    <ol>
+                        <li class="fragment">Data is broken into packets</li>
+                        <li class="fragment">Packets are sent from your device to your ISP</li>
+                        <li class="fragment">ISP forwards packets to the destination server</li>
+                        <li class="fragment">Server processes the request and sends response</li>
+                        <li class="fragment">Response travels back through the network</li>
+                        <li class="fragment">Your device reassembles the packets</li>
+                    </ol>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h3>Websites vs Web Apps</h3>
+                    <img src="https://media0.giphy.com/media/3o6gbf2CNI9ZxRb6lW/giphy.gif" alt="Website vs Web App">
+                    </section>
+                    <section>
+                        <h3>Website</h3>
+                        <p>A website is a collection of web pages typically designed to provide static content to users. These pages are interconnected and are generally meant to inform, entertain, or serve as a business card for a company or individual.</p>
+    
+                    </section>
+                    <section>
+                                        <h3>Attributes of a website</h3>
+                    <ul>
+                        <li>Static content</li>
+                        <li>Informational</li>
+                        <li>Limited user interaction</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Web applications</h2>
+                    <p>A web application is a dynamic, interactive software program built to perform specific tasks and is accessed through a web browser. Web applications often involve user input and interaction, manipulating data, and responding to user requests in real-time</p>
+                   </section>
+                   <section>
+                    <h3>Web App</h3>
+                    <ul>
+                        <li>Dynamic content</li>
+                        <li>Interactive functionality</li>
+                        <li>User-specific responses</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section>
+                <section data-markdown>
+                    <textarea data-template>
+                    ## Tech Stack
+                    
+                    | | Website | Web App |
+                    |---|---|---|
+                    | Frontend | HTML, CSS, basic JS | Advanced JS, frameworks |
+                    | Hosting | Simple hosting/CMS | Complex server setups |
+                    | Backend | Not typically required | Server-side languages |
+                    </textarea>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h2>Terminal and Command Line</h2>
+                    <p>Essential tools for developers</p>
+                </section>
+
+                <section>
+                    <h3>What is a Terminal?</h3>
+                    <ul>
+                        <li>Text-based interface to interact with your computer</li>
+                        <li>Allows direct communication with the operating system</li>
+                        <li>Powerful tool for file management, system configuration, and development tasks</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Command Line Basics</h3>
+                    <ul>
+                        <li>Commands are typed and executed in the terminal</li>
+                        <li>Each command performs a specific action</li>
+                        <li>Options and arguments can modify command behavior</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Common Commands</h3>
+                    <pre><code class="language-bash">
+ls    # List directory contents
+cd    # Change directory
+mkdir # Create a new directory
+touch # Create a new file
+echo # Write to a file
+rm    # Remove files or directories
+cp    # Copy files or directories
+mv    # Move or rename files or directories
+                    </code></pre>
+                </section>
+            </section>
+ <section>
+        <h3>Exercise</h3>
+        <ol>
+            <li>Create a new directory called excercise</li>
+            <li>Move into the new directory</li>
+            <li>Create a file called mySelf.txt</li>
+            <li>Write a short Description about yourself in that file</li>
+            <li>Display the contents in that file</li>
+            <li>Move back to the parent directory</li>
+            <li>Remove the excercise directory</li>
+        </ol>
+    </section>
+             <section>
+                <h2>Thank you for your attention</h2>
+                <p>oh NO questions?</p>
+                <p> great</p>
+            </section>
+            <section>
+                <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjhyM3VudnlheXg1eWkxcXpyOWZ4dnVmdHltcTUzMThqOHl0ejM1YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Sb7T6W3DddWmZ7igWd/giphy.gif" alt="Embedded GIF">
+            </section>
+            <section>
+                <h1>Dare to continue?</h1>
+                <p>Are you sure you want to continue? <br>
+                    <p>Click the button of no return.</p>
+                <a href="w2.html" class="button" style="display: inline-block; padding: 10px 20px; background-color: #2885a5; color: white; text-decoration: none; font-size: 18px; border-radius: 5px; transition: background-color 0.3s;">
+                    Let's have it!
+                </a>
+                <a href="index.html" class="button" style="display: inline-block; padding: 10px 20px; background-color: #a52828; color: white; text-decoration: none; font-size: 18px; border-radius: 5px; transition: background-color 0.3s; margin-left: 10px;">
+                    Back to Home
+                </a>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/progress/progress.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            plugins: [ RevealMarkdown, RevealHighlight ],
+            backgroundTransition: 'slide' // none/fade/slide/convex/concave/zoom
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Advanced HTML and CSS</title>
+    <link rel="icon" type="image/png" href="assets/Engineering_Workshop_14_OCT.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/night.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/a11y-dark.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/progress/progress.min.css">
+
+    <style>
+        .reveal code {
+            color: var(--r-link-color-hover);
+        }
+        body {
+            background: linear-gradient(100%, #1a2a6c, #b21f1f, #fdbb2d);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+        .reveal h2, .reveal h3, .reveal h4, .reveal h5 {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .reveal ul li {
+            margin-bottom: 10px;
+        }
+        .reveal pre {
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h2>Advanced HTML and CSS</h2>
+                <p>Taking your web development skills to the next level</p>
+            </section>
+
+            <section>
+                <section>
+                    <h3>Semantic HTML Elements</h3>
+                    <p>Semantic elements clearly describe their meaning to both the browser and the developer.</p>
+                    <ul>
+                        <li>Non-semantic elements: <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code></li>
+                        <li>Semantic elements: <code>&lt;form&gt;</code>, <code>&lt;table&gt;</code>, <code>&lt;article&gt;</code></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Exercise: Semantic HTML</h3>
+                    <p>Identify one non-semantic element in your HTML and suggest a semantic alternative.</p>
+                </section>
+
+                <section>
+                    <h5>Common Semantic Elements</h5>
+                    <ul>
+                        <li><code>&lt;section&gt;</code></li>
+                        <li><code>&lt;article&gt;</code></li>
+                        <li><code>&lt;header&gt;</code></li>
+                        <li><code>&lt;footer&gt;</code></li>
+                        <li><code>&lt;main&gt;</code></li>
+                        <li><code>&lt;nav&gt;</code></li>
+                        <li><code>&lt;aside&gt;</code></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h5>Semantic Structure Example</h5>
+                    <pre><code class="language-html">
+&lt;header&gt;
+    &lt;h1&gt;My Website&lt;/h1&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+&lt;main&gt;
+    &lt;article&gt;
+        &lt;h2&gt;Article Title&lt;/h2&gt;
+        &lt;p&gt;Article content...&lt;/p&gt;
+    &lt;/article&gt;
+    &lt;aside&gt;
+        &lt;h3&gt;Related Links&lt;/h3&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/aside&gt;
+&lt;/main&gt;
+&lt;footer&gt;
+    &lt;p&gt;&copy; 2024 My Website&lt;/p&gt;
+&lt;/footer&gt;
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h3>Exercise: Blog Structure</h3>
+                    <p>List three semantic elements you would use to structure a simple blog post.</p>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h3>HTML Tables</h3>
+                    <p>Used for displaying tabular data with rows and columns.</p>
+                </section>
+                <section>
+                    <pre><code class="language-html">
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Header 1&lt;/th&gt;
+            &lt;th&gt;Header 2&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+            &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Row 2, Cell 1&lt;/td&gt;
+            &lt;td&gt;Row 2, Cell 2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h3>Exercise: HTML Table</h3>
+                    <p>Create a simple HTML table with 2 columns and 3 rows, including a header row.</p>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h3>HTML Forms</h3>
+                    <p>Used to collect user input.</p>
+                    <pre><code class="language-html">
+&lt;form action="/submit" method="post"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name" required&gt;
+    
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email" required&gt;
+    
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h5>Form Input Types</h5>
+                    <pre><code class="language-html">
+&lt;input type="text" name="username"&gt;
+&lt;input type="password" name="password"&gt;
+&lt;input type="email" name="email"&gt;
+&lt;input type="checkbox" name="subscribe"&gt;
+&lt;input type="radio" name="gender" value="male"&gt; Male
+&lt;input type="radio" name="gender" value="female"&gt; Female
+&lt;input type="submit" value="Submit"&gt;
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h3>Exercise: HTML Form</h3>
+                    <p>Create a simple contact form with fields for name, email, and a message.</p>
+                </section>
+
+                <section>
+                    <h5>Checkboxes and Dropdown</h5>
+                    <pre><code class="language-html">
+&lt;!-- Checkboxes --&gt;
+&lt;input type="checkbox" id="option1" name="option1" value="1"&gt;
+&lt;label for="option1"&gt;Option 1&lt;/label&gt;
+&lt;input type="checkbox" id="option2" name="option2" value="2"&gt;
+&lt;label for="option2"&gt;Option 2&lt;/label&gt;
+
+&lt;!-- Dropdown --&gt;
+&lt;select name="cars" id="cars"&gt;
+    &lt;option value="volvo"&gt;Volvo&lt;/option&gt;
+    &lt;option value="saab"&gt;Saab&lt;/option&gt;
+    &lt;option value="mercedes"&gt;Mercedes&lt;/option&gt;
+    &lt;option value="audi"&gt;Audi&lt;/option&gt;
+&lt;/select&gt;
+                    </code></pre>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h3>Advanced CSS: Flexbox</h3>
+                    <p>A layout model that provides an easy and clean way to arrange items within a container.</p>
+                </section>
+                <section>
+                    <pre><code class="language-css">
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item {
+    flex: 1;
+}
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h3>Exercise: Flexbox Layout</h3>
+                    <p>Use Flexbox to create a simple horizontal navigation bar with three items.</p>
+                </section>
+
+                <section>
+                    <h5>Advanced CSS: Grid</h5>
+                    <p>A two-dimensional layout system for the web.</p>
+                    <pre><code class="language-css">
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.item {
+    grid-column: span 2;
+}
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h3>Exercise: CSS Grid</h3>
+                    <p>Create a simple 2x2 grid layout using CSS Grid.</p>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h5>CSS Transitions and Animations</h5>
+                    <h5>Transitions</h5>
+                    <pre><code class="language-css">
+.button {
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: #ff0000;
+}
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h3>Exercise: CSS Transition</h3>
+                    <p>Add a simple color transition to a button on hover.</p>
+                </section>
+
+                <section>
+                    <h5>CSS Transitions and Animations</h5>
+                    <h5>Animations</h5>
+                    <pre><code class="language-css">
+@keyframes slide-in {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+.animated-element {
+    animation: slide-in 0.5s forwards;
+}
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h3>Exercise: CSS Animation</h3>
+                    <p>Create a simple fade-in animation for a heading element.</p>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h3>CSS Preprocessors: Sass</h3>
+                    <p>Extends CSS with features like variables, nesting, and mixins.</p>
+                </section>
+                <section>
+                    <pre><code class="language-scss">
+$primary-color: #3498db;
+
+.button {
+    background-color: $primary-color;
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
+}
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h3>Exercise: Sass Variables</h3>
+                    <p>Define a Sass variable for a primary color and use it in a button style.</p>
+                </section>
+            </section>
+
+            <section>
+                <h3>Responsive Web Design</h3>
+                <p>Creating web pages that look good on all devices.</p>
+                <pre><code class="language-css">
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Exercise: Media Query</h3>
+                <p>Write a media query that changes the font size of a heading when the screen width is less than 480px.</p>
+            </section>
+
+            <section>
+                <h3>Thank You!</h3>
+                <p>Any questions?</p>
+                <img src="https://media.giphy.com/media/3o7buirYcmV5nSwIRW/giphy.gif" alt="Thank You GIF">
+            </section>
+
+            <section>
+                <h2>Ready for More?</h2>
+                <p>Continue your web development journey!</p>
+                <a href="w6.html" class="button" style="display: inline-block; padding: 10px 20px; background-color: #e23c3c; color: white; text-decoration: none; font-size: 18px; border-radius: 5px; transition: background-color 0.3s;">
+                    Next
+                </a>
+                <a href="index.html" class="button" style="display: inline-block; padding: 10px 20px; background-color: #3ce267; color: white; text-decoration: none; font-size: 18px; border-radius: 5px; transition: background-color 0.3s; margin-left: 10px;">
+                    Back to Home
+                </a>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/progress/progress.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            plugins: [ RevealMarkdown, RevealHighlight ],
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'slide'
+        });
+    </script>
+</body>
+</html>

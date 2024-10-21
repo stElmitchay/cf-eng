@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Series</title>
+    <link rel="icon" type="image/png" href="assets/AVATAR copy.PNG">
+    <!-- Added meta tags for link previews -->
+    <meta property="og:title" content="Web Development Series">
+    <meta property="og:description" content="Embark on a journey through the fundamentals of web development. From understanding the basics of the internet to mastering advanced HTML and CSS techniques, this series will guide you through the essential building blocks of modern web development.">
+    <meta property="og:image" content="assets/Engineering_Workshop_14_OCT.png">
+    <meta property="og:url" content="https://cf-eng.vercel.app">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #234536;
+            color: beige;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 900px;
+            padding: 2rem;
+            background: #2c5446;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            border: 2px solid #3a7261;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            color: beige;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-style: italic;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: #1d3a2f;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #3a7261;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .card h2 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: #a3c9a8;
+            font-style: normal;
+        }
+        .card p {
+            font-style: italic;
+        }
+        .button-container {
+            margin-top: auto;
+            padding-top: 1rem;
+        }
+        .card a {
+            color: #234536;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            text-align: center;
+            padding: 0.5rem 1rem;
+            background: #a3c9a8;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            font-style: normal;
+        }
+        .card a:hover {
+            background: #88b08a;
+        }
+        .card.disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        .card.disabled a {
+            pointer-events: none;
+            background: #5a7d5a;
+            color: #a3c9a8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Introduction to Web Development Engineering Series</h1>
+        <p>Embark on a journey through the fundamentals of web development. From understanding the basics of the internet to mastering advanced HTML and CSS techniques, this series will guide you through the essential building blocks of modern web development.</p>
+        <div class="grid">
+            <div class="card" data-unlock-date="2023-10-17">
+                <h2>Internet Basics</h2>
+                <p>Understand the fundamentals of how the internet works.</p>
+                <div class="button-container">
+                    <a href="w1.html">Start Learning</a>
+                </div>
+            </div>
+            <div class="card" data-unlock-date="2024-10-24">
+                <h2>Web Dev Tools</h2>
+                <p>Explore essential tools for web development.</p>
+                <div class="button-container">
+                    <a href="w2.html">Discover Tools</a>
+                </div>
+            </div>
+            <div class="card" data-unlock-date="2024-10-31">
+                <h2>HTML Fundamentals</h2>
+                <p>Learn the basics of HTML structure and elements.</p>
+                <div class="button-container">
+                    <a href="w3.html">Code HTML</a>
+                </div>
+            </div>
+            <div class="card" data-unlock-date="2024-11-07">
+                <h2>CSS Essentials</h2>
+                <p>Master the art of styling with CSS.</p>
+                <div class="button-container">
+                    <a href="w4.html">Style with CSS</a>
+                </div>
+            </div>
+            <div class="card" data-unlock-date="2024-11-14">
+                <h2>Advanced HTML & CSS</h2>
+                <p>Take your HTML and CSS skills to the next level.</p>
+                <div class="button-container">
+                    <a href="w5.html">Level Up</a>
+                </div>
+            </div>
+            <div class="card" data-unlock-date="2024-11-21">
+                <h2>CSS Frameworks</h2>
+                <p>Learn about CSS frameworks and Tailwind CSS.</p>
+                <div class="button-container">
+                    <a href="w6.html">Explore Frameworks</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

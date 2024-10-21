@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Web Development Tools</title>
+    <link rel="icon" type="image/png" href="assets/Engineering_Workshop_14_OCT.png"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/moon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/a11y-dark.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/progress/progress.min.css">
+
+    <style>
+        .reveal code {
+            color: var(--r-link-color-hover);
+        }
+        body {
+            background: linear-gradient(100%, #1a2a6c, #b21f1f, #fdbb2d);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+        .reveal h2 {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .reveal ul li {
+            margin-bottom: 10px;
+        }
+        .reveal table {
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h2>Web Development Tools</h2>
+                <p>Understanding the Fundamentals</p>
+            </section>
+
+            <section>
+                <h5>Code Editors</h5>
+                <ul>
+                    <li>Visual Studio Code: Powerful, with extensive plugins and debugging (recommended)</li>
+                    <li>Sublime Text: Fast, simple, and highly customizable</li>
+                    <li>Notepad++: Lightweight and feature-rich for Windows</li>
+                </ul>
+            </section>
+
+            <section>
+                <h5>Version Control</h5>
+                <ul>
+                    <li>Git: Popular, distributed version control system (recommended)</li>
+                    <li>GitHub: Web-based Git platform with collaboration features (recommended)</li>
+                    <li>GitLab: Integrated platform with Git repository management and CI/CD</li>
+                    <li>Bitbucket: Supports Git and Mercurial, integrates with Atlassian tools</li>
+                </ul>
+            </section>
+
+            <section>
+                <h5>Package Managers</h5>
+                <ul>
+                    <li>npm: Default for Node.js, widely used in JavaScript</li>
+                    <li>Yarn: Fast and reliable alternative to npm</li>
+                    <li>pip: Manages Python libraries</li>
+                    <li>Composer: Manages PHP libraries and packages</li>
+                </ul>
+            </section>
+
+            <section>
+                <h5>Build Tools</h5>
+                <ul>
+                    <li>Webpack: Module bundler for JavaScript</li>
+                    <li>Gulp: Task runner for automation</li>
+                    <li>Grunt: Simple task runner with many plugins</li>
+                    <li>Parcel: Fast web application bundler with zero-configuration</li>
+                </ul>
+            </section>
+
+            <section>
+                <h5>Browser Developer Tools</h5>
+                <ul>
+                    <li>Chrome DevTools: Built into Chrome, for debugging and inspection</li>
+                    <li>Firefox Developer Tools: Similar to Chrome, with CSS Grid inspector</li>
+                    <li>Safari Web Inspector: For debugging on macOS and iOS, integrated with Safari</li>
+                    <li>Edge DevTools: Integrated into Edge, for DOM inspection and JavaScript debugging</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Programming Languages</h2>
+                <p>A formal language comprising a set of instructions that produce various kinds of output.</p>
+            </section>
+
+            <section>
+                <h5>Examples</h5>
+                <ul>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>Java</li>
+                    <li>C++</li>
+                </ul>
+            </section>
+
+            <section>
+                <h5>Uses</h5>
+                <ul>
+                    <li>Building software applications</li>
+                    <li>Automating tasks</li>
+                    <li>Data analysis and visualization</li>
+                    <li>Web development</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Markup Languages</h2>
+                <p>Used to annotate text for machine manipulation, primarily for formatting documents.</p>
+            </section>
+
+            <section>
+                <h5>Examples</h5>
+                <ul>
+                    <li>HTML</li>
+                    <li>XML</li>
+                    <li>Markdown</li>
+                </ul>
+            </section>
+
+            <section>
+                <h5>Uses</h5>
+                <ul>
+                    <li>Structuring web pages</li>
+                    <li>Defining data structures</li>
+                    <li>Formatting text in a readable way</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Frameworks</h2>
+                <p>A comprehensive platform that provides a structured environment for building applications.</p>
+            </section>
+
+            <section>
+                <h5>Examples</h5>
+                <ul>
+                    <li>React (JavaScript)</li>
+                    <li>Angular (JavaScript)</li>
+                    <li>Django (Python)</li>
+                    <li>Ruby on Rails (Ruby)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h5>Uses</h5>
+                <ul>
+                    <li>Simplifying complex programming tasks</li>
+                    <li>Enforcing best practices</li>
+                    <li>Speeding up development</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Libraries</h2>
+                <p>A collection of pre-written code that developers can use to perform common tasks.</p>
+            </section>
+
+            <section>
+                <h5>Examples</h5>
+                <ul>
+                    <li>Lodash (JavaScript)</li>
+                    <li>NumPy (Python)</li>
+                    <li>jQuery (JavaScript)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h5>Uses</h5>
+                <ul>
+                    <li>Utility functions</li>
+                    <li>Scientific computing</li>
+                    <li>DOM manipulation</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>APIs</h2>
+                <p>A set of rules that allows one piece of software to interact with another.</p>
+            </section>
+
+            <section>
+                <h5>Examples</h5>
+                <ul>
+                    <li>REST APIs</li>
+                    <li>GraphQL</li>
+                    <li>Windows API</li>
+                    <li>Google Maps API</li>
+                </ul>
+            </section>
+
+            <section>
+                <h5>Uses</h5>
+                <ul>
+                    <li>Allowing different software systems to communicate</li>
+                    <li>Integrating third-party services</li>
+                    <li>Accessing web services</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Deploying</h2>
+                <p>Deployment is the process of making a web application available for use on the Internet.</p>
+            </section>
+
+            <section>
+                <h5>Deploying: Methods and Services</h5>
+                <ul>
+                    <li>Methods: FTP/SFTP, Git-based deployment, Platform as a Service (PaaS)</li>
+                    <li>Web Hosting Services: Shared Hosting, VPS Hosting, Cloud Hosting, Managed Hosting</li>
+                </ul>
+            </section>
+
+            <section>
+                <h5>Deploying: Best Practices</h5>
+                <ul>
+                    <li>Automation</li>
+                    <li>Consistency</li>
+                    <li>Security</li>
+                    <li>Backup</li>
+                    <li>Monitoring</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Intro to Git</h2>
+                <p>Git is a popular distributed version control system used in many projects.</p>
+            </section>
+
+            <section>
+                <h2>Installing Git</h2>
+                <ul>
+                    <li>Windows: Download and install from <a href="https://git-scm.com/">git-scm.com</a></li>
+                    <li>Mac: Use Homebrew: <code>brew install git</code></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Configuring Git</h2>
+                <pre><code class="language-bash">
+git config --global user.name "Your Name"
+git config --global user.email "youremail@example.com"
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>Basic Git Workflow</h2>
+                <pre><code class="language-bash">
+# Clone the repository
+git clone https://github.com/username/repo.git
+
+# Create a new branch
+git checkout -b feature-branch
+
+# Make changes to files
+
+# Stage changes
+git add .
+
+# Commit changes
+git commit -m "Describe your changes"
+
+# Push to remote
+git push origin feature-branch
+
+# Create a pull request on GitHub
+
+# After review, merge the pull request into the main branch
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>Common Git Commands</h2>
+                <p>Let's explore some essential Git commands:</p>
+            </section>
+
+            <section>
+                <h2>Initialize a Repository</h2>
+                <pre><code class="language-bash">
+# Initialize a new Git repository
+git init
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>Check Repository Status</h2>
+                <pre><code class="language-bash">
+# Check the status of your repository
+git status
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>Stage Changes</h2>
+                <pre><code class="language-bash">
+# Add specific file to staging
+git add filename.txt
+
+# Add all changes to staging
+git add .
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>Commit Changes</h2>
+                <pre><code class="language-bash">
+# Commit staged changes
+git commit -m "Your commit message"
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>View Commit History</h2>
+                <pre><code class="language-bash">
+# View commit history
+git log
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>Branch Management</h2>
+                <pre><code class="language-bash">
+# Create a new branch
+git branch new-branch-name
+
+# Switch to a different branch
+git checkout branch-name
+
+# Create and switch to a new branch
+git checkout -b new-branch-name
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>Merging Branches</h2>
+                <pre><code class="language-bash">
+# Merge a branch into the current branch
+git merge branch-name
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>Remote Repository Operations</h2>
+                <pre><code class="language-bash">
+# Pull changes from a remote repository
+git pull origin branch-name
+
+# Push changes to a remote repository
+git push origin branch-name
+
+# Fetch changes from a remote repository
+git fetch origin
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>View Differences</h2>
+                <pre><code class="language-bash">
+# Show differences between working directory and last commit
+git diff
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>GitHub</h2>
+                <p>GitHub is a web-based platform that uses Git for version control.</p>
+            </section>
+
+            <section>
+                <h2>GitHub Features</h2>
+                <ul>
+                    <li>Repository hosting and management</li>
+                    <li>Collaboration and teamwork</li>
+                    <li>Version control and history</li>
+                    <li>Open source community</li>
+                    <li>Portfolio and visibility for developers</li>
+                    <li>Project management with issues and projects</li>
+                    <li>Integration with other development tools</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Working with GitHub: Adding a Remote</h2>
+                <pre><code class="language-bash">
+# Add a remote repository
+git remote add origin https://github.com/username/repo.git
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>Working with GitHub: Pushing Changes</h2>
+                <pre><code class="language-bash">
+# Push changes to GitHub
+git push -u origin main
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>Working with GitHub: Cloning a Repository</h2>
+                <pre><code class="language-bash">
+# Clone a repository from GitHub
+git clone https://github.com/username/repo.git
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>Working with GitHub: Forking</h2>
+                <p>Fork a repository on GitHub (done through the web interface)</p>
+            </section>
+
+            <section>
+                <h2>Working with GitHub: Updating Your Fork</h2>
+                <pre><code class="language-bash">
+# Update your fork with changes from the original repository
+git remote add upstream https://github.com/original-owner/repo.git
+git fetch upstream
+git merge upstream/main
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>Git Best Practices</h2>
+                <ul>
+                    <li>Write clear, descriptive commit messages</li>
+                    <li>Commit often, push regularly</li>
+                    <li>Use branches for new features or bug fixes</li>
+                    <li>Keep your local repository up to date</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>GitHub Best Practices</h2>
+                <ul>
+                    <li>Use pull requests for code review</li>
+                    <li>Document your project with a good README</li>
+                    <li>Utilize GitHub Issues for task tracking</li>
+                    <li>Leverage GitHub Actions for CI/CD</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Exercise: GitHub Collaboration</h2>
+                <ol>
+                    <li>Create a new repository on GitHub</li>
+                    <li>Clone the repository to your local machine</li>
+                    <li>Create a new file and commit it</li>
+                    <li>Push the changes to GitHub</li>
+                    <li>Create a new branch on GitHub</li>
+                    <li>Make changes to a file in the new branch</li>
+                    <li>Create a pull request</li>
+                    <li>Review and merge the pull request</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Thank You!</h2>
+                <p>oh no questions GREAT</p>
+                <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDhwbTJ0YTVtbTdqdjkyOXlwMXdpeng5eXRjZjF3c2RjNmVtbG9oNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/S3DAGHonsHuognU3AH/giphy.gif" alt="Thank You GIF">
+            </section>
+
+            <!-- New section with the button -->
+            <section>
+                <h1>Ready for HTML?</h1>
+                <p>Are you sure?</p>
+                <p>Click the button of no RETURN!</p>
+                <a href="w3.html" class="button" style="display: inline-block; padding: 10px 20px; background-color: #a00c0c; color: white; text-decoration: none; font-size: 18px; border-radius: 5px; transition: background-color 0.3s;">
+                    Touch Me!
+                </a>
+                <a href="index.html" class="button" style="display: inline-block; padding: 10px 20px; background-color: #0ca03a; color: white; text-decoration: none; font-size: 18px; border-radius: 5px; transition: background-color 0.3s; margin-left: 10px;">
+                    Back to Home
+                </a>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/progress/progress.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            plugins: [ RevealMarkdown, RevealHighlight ],
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'slide'
+        });
+    </script>
+</body>
+</html>

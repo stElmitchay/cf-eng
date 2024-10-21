@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Introduction to HTML</title>
+    <link rel="icon" type="imeage/png" href="assets/Engineering_Workshop_14_OCT.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/blood.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/a11y-dark.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/progress/progress.min.css">
+
+    <style>
+        .reveal code {
+            color: var(--r-link-color-hover);
+        }
+        body {
+            background: linear-gradient(100%, #1a2a6c, #b21f1f, #fdbb2d);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+        .reveal h2, .reveal h3, .reveal h4 {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .reveal ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h2>INTRODUCTION TO HTML</h2>
+                <p>baby Steps To Web Development</p>
+            </section>
+
+            <section>
+                <h3>What is HTML?</h3>
+                <ul>
+                    <li>HTML stands for Hyper Text Markup Language</li>
+                    <li>HTML is the standard markup language for creating Web pages</li>
+                    <li>HTML describes the structure of a Web page</li>
+                    <li>HTML consists of a series of elements</li>
+                    <li>HTML elements tell the browser how to display the content</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>HTML Structure</h3>
+                <img src="https://www.notion.so/PHASE-1-Course-76d122f4c2904589a256bcf4a8081e2b?pvs=4#eb1e309323694a43a857c57b3f98bfae" alt="HTML Structure">
+            </section>
+
+            <section>
+                <h3>Where do I write HTML?</h3>
+            </section>
+
+            <section>
+                <section>
+                    <h3>ANYWHERE!</h3>
+                    <p>You can literally write HTML anywhere.</p>
+                </section>
+
+                <section>
+                    <p style="margin-bottom: 20px; font-size: 1.1em;">However, there are dedicated software like code editors and text editors designed to write code (HTML):</p>
+                    <ul style="list-style-type: none; padding-left: 10px; margin-left: 0;">
+                        <li>🖋 Sublime Text</li>
+                        <li>📝 Notepad</li>
+                        <li>📓 Notes</li>
+                        <li>💻 Visual Studio Code</li>
+                        <li>🌐 Codepen</li>
+                        <li>🚀 Replit</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section>
+                <h3>Your First HTML Page</h3>
+                <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;PAGE&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;h1&gt; MY FIRST PAGE &lt;/h1&gt;
+&lt;p&gt; Today is a monumental day, the day i become a developer&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Exercise 1: Create Your First Webpage</h3>
+                <ol>
+                    <li>Open your preferred text/code editor</li>
+                    <li>Create a new file called "myFirstSite.html"</li>
+                    <li>Copy and paste the HTML code from the previous slide</li>
+                    <li>Save the file</li>
+                    <li>Open the file in a web browser</li>
+                </ol>
+            </section>
+
+            <section>
+                <h3>Basic HTML Tags</h3>
+                <ul>
+                    <li><code>&lt;p&gt;</code> - Paragraph</li>
+                    <li><code>&lt;a&gt;</code> - Link</li>
+                    <li><code>&lt;img&gt;</code> - Image</li>
+                    <li><code>&lt;div&gt;</code> - Division</li>
+                    <li><code>&lt;span&gt;</code> - Inline container</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>HTML Attributes</h3>
+                <ul>
+                    <li><code>href</code> - Hyperlink reference</li>
+                    <li><code>src</code> - Source</li>
+                    <li><code>alt</code> - Alternative text</li>
+                    <li><code>class</code> - CSS class</li>
+                    <li><code>id</code> - Unique identifier</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>HTML Headings</h3>
+                <p>HTML headings are defined with the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags.</p>
+                <pre><code class="language-html">
+&lt;h1&gt;This is heading 1&lt;/h1&gt;
+&lt;h2&gt;This is heading 2&lt;/h2&gt;
+&lt;h3&gt;This is heading 3&lt;/h3&gt;
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Exercise 2: Headings and Paragraphs</h3>
+                <ol>
+                    <li>Open your "myFirstSite.html" file</li>
+                    <li>Add three different levels of headings</li>
+                    <li>Under each heading, add a paragraph of text</li>
+                    <li>Save and refresh in the browser</li>
+                </ol>
+            </section>
+
+            <section>
+                <h3>HTML Lists</h3>
+                <p>HTML provides two types of lists: unordered and ordered.</p>
+            </section>
+
+            <section>
+                <h3>Unordered Lists</h3>
+                <p>Unordered lists are created using the <code>&lt;ul&gt;</code> tag:</p>
+                <pre><code class="language-html">
+&lt;ul&gt;
+  &lt;li&gt;First item&lt;/li&gt;
+  &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ul&gt;
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Ordered Lists</h3>
+                <p>Ordered lists are created using the <code>&lt;ol&gt;</code> tag:</p>
+                <pre><code class="language-html">
+&lt;ol&gt;
+  &lt;li&gt;First item&lt;/li&gt;
+  &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ol&gt;
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Exercise 3: Creating Lists</h3>
+                <ol>
+                    <li>In your HTML file, create an unordered list of your favorite foods</li>
+                    <li>Create an ordered list of your top 3 vacation destinations</li>
+                    <li>Save and view the changes in your browser</li>
+                </ol>
+            </section>
+
+            <section>
+                <h3>HTML Links</h3>
+                <p>Links are defined with the <code>&lt;a&gt;</code> tag, using the <code>href</code> attribute to specify the URL.</p>
+                <pre><code class="language-html">
+&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>HTML Images</h3>
+                <p>Images are defined with the <code>&lt;img&gt;</code> tag, using the <code>src</code> attribute to specify the image source and the <code>alt</code> attribute to provide alternative text.</p>
+                <pre><code class="language-html">
+&lt;img src="image.jpg" alt="Description of image"&gt;
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Exercise 4: Links and Images</h3>
+                <ol>
+                    <li>Add a link to your favorite website in your HTML file</li>
+                    <li>Find an image online and add it to your page using the <code>&lt;img&gt;</code> tag</li>
+                    <li>Make sure to include an <code>alt</code> attribute for your image</li>
+                    <li>Save and view your updated page</li>
+                </ol>
+            </section>
+
+            <section>
+                <h3>HTML File Paths</h3>
+                <p>File paths describe the location of a file in a web site's folder structure.</p>
+                <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/a0ce00e2-435a-4e33-99d0-71a42933885c/92406749-a0fa-4062-91fb-b3c695ec4b0c/Screenshot_2024-07-23_at_19.06.29.png" alt="File Paths">
+            </section>
+
+            <section>
+                <h3>Absolute File Paths</h3>
+                <p>Absolute file paths provide the full URL to a file:</p>
+                <pre><code class="language-html">
+&lt;img src="https://www.example.com/images/picture.jpg" alt="Example Image"&gt;
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Relative File Paths</h3>
+                <p>Relative file paths specify the location relative to the current file:</p>
+                <pre><code class="language-html">
+&lt;img src="images/picture.jpg" alt="Example Image"&gt;
+                </code></pre>
+            </section>
+
+            <section>
+                <h4>Exercise 5: File Paths</h4>
+                <ol>
+                    <li>Create a folder called "images" in the same directory as your HTML file</li>
+                    <li>Download an image and place it in the "images" folder</li>
+                    <li>Add the image to your HTML file using a relative file path</li>
+                    <li>Add another image using an absolute file path from a website</li>
+                    <li>Save and view your page to ensure both images are displayed correctly</li>
+                </ol>
+            </section>
+
+            <section>
+                <h4>Your Personal Webpage</h4>
+                <p>Create a personal webpage about yourself, including:</p>
+                <ul>
+                    <li>A title and heading with your name</li>
+                    <li>A short biography paragraph</li>
+                    <li>An unordered list of your hobbies</li>
+                    <li>An ordered list of your top 5 favorite movies or books</li>
+                    <li>A link to your social media profile or a favorite website</li>
+                    <li>An image of yourself or something that represents you</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Conclusion</h3>
+                <ul>
+                    <li>You've learned the basics of HTML</li>
+                    <li>Practice is key to improving your skills</li>
+                    <li>Experiment with different tags and attributes</li>
+                    <li>Next steps: Learn about CSS to style your HTML pages</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Thank You!</h3>
+                <p>Any questions?</p>
+                <img src="https://media.giphy.com/media/3o7buirYcmV5nSwIRW/giphy.gif" alt="Thank You GIF">
+                <br>
+                <a href="w4.html" class="button" style="display: inline-block; padding: 10px 20px; background-color: #2885a5; color: white; text-decoration: none; font-size: 18px; border-radius: 5px; transition: background-color 0.3s;">
+                    Next: CSS Essentials
+                </a>
+                <a href="index.html" class="button" style="display: inline-block; padding: 10px 20px; background-color: #a52828; color: white; text-decoration: none; font-size: 18px; border-radius: 5px; transition: background-color 0.3s; margin-left: 10px;">
+                    Back to Home
+                </a>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/progress/progress.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            plugins: [ RevealMarkdown, RevealHighlight ],
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'slide'
+        });
+    </script>
+</body>
+</html>

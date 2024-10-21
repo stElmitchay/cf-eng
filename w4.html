@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Introduction to CSS</title>
+    <link rel="icon" type="image/png" href="assets/Engineering_Workshop_14_OCT.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/sky.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/a11y-dark.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/progress/progress.min.css">
+
+    <style>
+        .reveal code {
+            color: var(--r-link-color-hover);
+        }
+        body {
+            background: linear-gradient(100%, #1a2a6c, #b21f1f, #fdbb2d);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+        .reveal h2, .reveal h3, .reveal h4 {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .reveal ul li {
+            margin-bottom: 10px;
+        }
+        .reveal pre {
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h2>Introduction to CSS</h2>
+                <p>Cascading Style Sheets</p>
+            </section>
+
+            <section>
+                <h3>What is CSS?</h3>
+                <ul>
+                    <li>CSS (Cascading Style Sheets) is used to style and layout web pages.</li>
+                    <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Linking CSS to HTML</h3>
+                <p>CSS can be added to HTML documents in three ways: inline, internal, and external.</p>
+            </section>
+
+            <section>
+                <section>
+                    <h4>Inline CSS</h4>
+                    <p>Adding styles directly to the HTML element using the <code>style</code> attribute:</p>
+                </section>
+                <section>
+                    <pre><code class="language-html">
+&lt;p style="color: red;"&gt;This is a red paragraph.&lt;/p&gt;
+                    </code></pre>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h4>Internal CSS</h4>
+                    <p>Adding styles within a <code>&lt;style&gt;</code> tag in the HTML <code>&lt;head&gt;</code>:</p>
+                </section>
+                <section>
+                    <pre><code class="language-html">
+&lt;head&gt;
+&lt;style&gt;
+p {
+    color: blue;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+                    </code></pre>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h4>External CSS</h4>
+                    <p>Linking an external CSS file using the <code>&lt;link&gt;</code> tag in the HTML <code>&lt;head&gt;</code>:</p>
+                </section>
+                <section>
+                    <pre><code class="language-html">
+&lt;head&gt;
+&lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+                    </code></pre>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h3>Basic CSS Syntax and Selectors</h3>
+                    <ul>
+                        <li>CSS syntax consists of a selector and a declaration block.</li>
+                        <li>Selectors can be element selectors, class selectors, and ID selectors.</li>
+                    </ul>
+                </section>
+                <section>
+                    <pre><code class="language-css">
+p {
+    color: green;
+}
+.intro {
+    font-size: 20px;
+}
+#main-heading {
+    text-align: center;
+}
+                    </code></pre>
+                </section>
+            </section>
+
+            <section>
+                <h3>CSS Text Styling</h3>
+                <p>CSS properties to style text include <code>font-family</code>, <code>font-size</code>, <code>font-weight</code>, <code>text-align</code>, and <code>text-decoration</code>.</p>
+            </section>
+
+            <section>
+                <section>
+                    <h3>CSS Text Styling Example</h3>
+                </section>
+                <section>
+                    <pre><code class="language-css">
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: justify;
+    text-decoration: underline;
+}
+                    </code></pre>
+                </section>
+            </section>
+
+            <section>
+                <h3>Box Model</h3>
+                <p>The CSS box model consists of margins, borders, padding, and the content area.</p>
+            </section>
+
+            <section>
+                <section>
+                    <h3>Box Model Example</h3>
+                </section>
+                <section>
+                    <pre><code class="language-css">
+div {
+    margin: 20px;
+    border: 2px solid #000;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+}
+                    </code></pre>
+                </section>
+            </section>
+
+            <section>
+                <h3>Display and Visibility</h3>
+                <p>CSS properties <code>display</code> and <code>visibility</code> control the layout and visibility of elements.</p>
+            </section>
+
+            <section>
+                <section>
+                    <h3>Display and Visibility Example</h3>
+                </section>
+                <section>
+                    <pre><code class="language-css">
+div {
+    display: block;
+}
+span {
+    display: inline;
+}
+.hidden {
+    display: none;
+}
+.visible {
+    visibility: visible;
+}
+.invisible {
+    visibility: hidden;
+}
+                    </code></pre>
+                </section>
+            </section>
+
+            <section>
+                <h3>CSS Layout: Positioning</h3>
+                <p>CSS positioning properties include <code>static</code>, <code>relative</code>, <code>absolute</code>, <code>fixed</code>, and <code>sticky</code>.</p>
+            </section>
+
+            <section>
+                <section>
+                    <h3>CSS Layout: Positioning Example</h3>
+                </section>
+                <section>
+                    <pre><code class="language-css">
+.relative {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+.absolute {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.sticky {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+}
+                    </code></pre>
+                </section>
+            </section>
+
+            <section>
+                <h3>Flexbox</h3>
+                <p>Flexbox is a layout model that provides an easy and clean way to arrange items within a container.</p>
+            </section>
+
+            <section>
+                <section>
+                    <h3>Flexbox Example</h3>
+                </section>
+                <section>
+                    <pre><code class="language-html">
+&lt;div class="container"&gt;
+    &lt;div class="item"&gt;1&lt;/div&gt;
+    &lt;div class="item"&gt;2&lt;/div&gt;
+    &lt;div class="item"&gt;3&lt;/div&gt;
+&lt;/div&gt;
+                    </code></pre>
+                </section>
+                <section>
+                    <pre><code class="language-css">
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.item {
+    flex: 1;
+    padding: 10px;
+}
+                    </code></pre>
+                </section>
+            </section>
+
+            <section>
+                <h3>Grid</h3>
+                <p>CSS Grid Layout is a two-dimensional layout system for the web</p>
+            </section>
+
+            <section>
+                <section>
+                    <h3>Grid Example</h3>
+                </section>
+                <section>
+                    <pre><code class="language-html">
+&lt;div class="grid-container"&gt;
+    &lt;div class="grid-item"&gt;1&lt;/div&gt;
+    &lt;div class="grid-item"&gt;2&lt;/div&gt;
+    &lt;div class="grid-item"&gt;3&lt;/div&gt;
+&lt;/div&gt;
+                    </code></pre>
+                </section>
+                <section>
+                    <pre><code class="language-css">
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.grid-item {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+                    </code></pre>
+                </section>
+            </section>
+
+            <section>
+                <h3>Thank You!</h3>
+                <p>Any questions?</p>
+                <img src="https://media.giphy.com/media/3o7buirYcmV5nSwIRW/giphy.gif" alt="Thank You GIF">
+                <br>
+                <a href="w5.html" class="button" style="display: inline-block; padding: 10px 20px; background-color: #2885a5; color: white; text-decoration: none; font-size: 18px; border-radius: 5px; transition: background-color 0.3s;">
+                    Next: Advanced HTML & CSS
+                </a>
+                <a href="index.html" class="button" style="display: inline-block; padding: 10px 20px; background-color: #a52828; color: white; text-decoration: none; font-size: 18px; border-radius: 5px; transition: background-color 0.3s; margin-left: 10px;">
+                    Back to Home
+                </a>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/progress/progress.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            plugins: [ RevealMarkdown, RevealHighlight ],
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'slide'
+        });
+    </script>
+</body>
+</html>

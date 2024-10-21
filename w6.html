@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>CSS Frameworks and Tailwind CSS</title>
+    <link rel="icon" type="image/png" href="assets/Engineering_Workshop_14_OCT.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/night.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/a11y-dark.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/progress/progress.min.css">
+
+    <style>
+        .reveal code {
+            color: var(--r-link-color-hover);
+        }
+        body {
+            background: linear-gradient(100%, #1a2a6c, #b21f1f, #fdbb2d);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+        .reveal h2, .reveal h3, .reveal h4, .reveal h5 {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .reveal ul li {
+            margin-bottom: 10px;
+        }
+        .reveal pre {
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h2>CSS Frameworks and Tailwind CSS</h2>
+                <p>Streamlining web development with modern tools</p>
+            </section>
+
+            <section>
+                <h3>What are CSS Frameworks?</h3>
+                <p>Pre-prepared libraries for easier, standards-compliant web design</p>
+            </section>
+
+            <section>
+                <h3>Benefits of CSS Frameworks</h3>
+                <ul>
+                    <li>Provide a grid system</li>
+                    <li>Offer pre-styled components</li>
+                    <li>Ensure cross-browser compatibility</li>
+                    <li>Speed up development process</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Popular CSS Frameworks</h3>
+                <ul>
+                    <li>Bootstrap</li>
+                    <li>Foundation</li>
+                    <li>Bulma</li>
+                    <li>Tailwind CSS</li>
+                    <li>Material UI</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Introduction to Tailwind CSS</h3>
+                <p>A utility-first CSS framework for rapidly building custom user interfaces</p>
+            </section>
+
+            <section>
+                <h3>Tailwind CSS Features</h3>
+                <ul>
+                    <li>Highly customizable</li>
+                    <li>Low-level utility classes</li>
+                    <li>No pre-styled components</li>
+                    <li>Flexible and composable</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Tailwind CSS Basics</h3>
+                <pre><code class="language-html">
+&lt;div class="bg-blue-500 text-white p-4 rounded-lg shadow-md"&gt;
+    This is a Tailwind styled div
+&lt;/div&gt;
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Setting Up Tailwind CSS</h3>
+                <p>Install Tailwind via npm:</p>
+                <pre><code class="language-bash">
+npm install tailwindcss
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Initialize Tailwind</h3>
+                <pre><code class="language-bash">
+npx tailwindcss init
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Tailwind Configuration</h3>
+                <pre><code class="language-javascript">
+// tailwind.config.js
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Utility-First Approach</h3>
+                <p>Tailwind uses small, single-purpose utility classes to build complex designs</p>
+            </section>
+
+            <section>
+                <h3>Utility-First Example</h3>
+                <pre><code class="language-html">
+&lt;button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"&gt;
+  Click me
+&lt;/button&gt;
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Responsive Design with Tailwind</h3>
+                <pre><code class="language-html">
+&lt;div class="text-center sm:text-left md:text-right lg:text-justify"&gt;
+  Responsive text alignment
+&lt;/div&gt;
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Customizing Tailwind</h3>
+                <p>Extend or override Tailwind's default theme:</p>
+            </section>
+
+            <section>
+                <h3>Custom Theme Example</h3>
+                <pre><code class="language-javascript">
+// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        'custom-blue': '#1da1f2',
+      },
+    },
+  },
+}
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Tailwind Plugins</h3>
+                <p>Extend Tailwind with reusable third-party plugins</p>
+            </section>
+
+            <section>
+                <h3>Plugin Example</h3>
+                <pre><code class="language-javascript">
+// tailwind.config.js
+module.exports = {
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+  ],
+}
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Exercise: Tailwind Component</h3>
+                <p>Create a simple card component using Tailwind CSS classes</p>
+            </section>
+
+            <section>
+                <h3>Pros of Tailwind CSS</h3>
+                <ul>
+                    <li>Rapid development</li>
+                    <li>Highly customizable</li>
+                    <li>No unused CSS in production</li>
+                    <li>Consistent design system</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Cons of Tailwind CSS</h3>
+                <ul>
+                    <li>Learning curve</li>
+                    <li>HTML can become cluttered</li>
+                    <li>Requires build step</li>
+                    <li>Not ideal for very small projects</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Thank You!</h3>
+                <p>Any questions about CSS frameworks or Tailwind CSS?</p>
+            </section>
+
+            <section>
+                <h2>Ready for More?</h2>
+                <p>Continue your web development journey!</p>
+                <a href="w6.html" class="button" style="display: inline-block; padding: 10px 20px; background-color: #e23c3c; color: white; text-decoration: none; font-size: 18px; border-radius: 5px; transition: background-color 0.3s;">
+                    Next: JavaScript Basics
+                </a>
+                <a href="index.html" class="button" style="display: inline-block; padding: 10px 20px; background-color: #3ce267; color: white; text-decoration: none; font-size: 18px; border-radius: 5px; transition: background-color 0.3s; margin-left: 10px;">
+                    Back to Home
+                </a>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/progress/progress.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            plugins: [ RevealMarkdown, RevealHighlight ],
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'slide'
+        });
+    </script>
+</body>
+</html>
