@@ -7,4 +7,4 @@
 - After completing commit and push your changes
 - Create a Pull Request
 
-For more details on how to complete the task please follow the workshop on dev tools here : https://youtu.be/owDCWGFjBNs?si=rUcGr7HLdEzKVrEi
+For more details on how to work with git/github please follow the workshop on dev tools here : https://youtu.be/owDCWGFjBNs?si=rUcGr7HLdEzKVrEi
