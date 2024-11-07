@@ -1,9 +1,8 @@
 ### Submission Instructions
 
-Locate the Assignment Directory:
-
 - Fork this Repository
 - Clone your Fork
+- Create a file in this assignment directory with your name and title of assignment following this format (Mitch-HTML-Task)
 - Complete the Assignment
 - After completing commit and push your changes
 - Create a Pull Request
