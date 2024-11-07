@@ -52,54 +52,8 @@
                     <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
                 </ul>
             </section>
-
             <section>
-                <h3>Linking CSS to HTML</h3>
-                <p>CSS can be added to HTML documents in three ways: inline, internal, and external.</p>
-            </section>
-
-            <section>
-                <section>
-                    <h4>Inline CSS</h4>
-                    <p>Adding styles directly to the HTML element using the <code>style</code> attribute:</p>
-                </section>
-                <section>
-                    <pre><code class="language-html">
-&lt;p style="color: red;"&gt;This is a red paragraph.&lt;/p&gt;
-                    </code></pre>
-                </section>
-            </section>
-
-            <section>
-                <section>
-                    <h4>Internal CSS</h4>
-                    <p>Adding styles within a <code>&lt;style&gt;</code> tag in the HTML <code>&lt;head&gt;</code>:</p>
-                </section>
-                <section>
-                    <pre><code class="language-html">
-&lt;head&gt;
-&lt;style&gt;
-p {
-    color: blue;
-}
-&lt;/style&gt;
-&lt;/head&gt;
-                    </code></pre>
-                </section>
-            </section>
-
-            <section>
-                <section>
-                    <h4>External CSS</h4>
-                    <p>Linking an external CSS file using the <code>&lt;link&gt;</code> tag in the HTML <code>&lt;head&gt;</code>:</p>
-                </section>
-                <section>
-                    <pre><code class="language-html">
-&lt;head&gt;
-&lt;link rel="stylesheet" href="styles.css"&gt;
-&lt;/head&gt;
-                    </code></pre>
-                </section>
+                <p>Explanation: External CSS is ideal for bigger projects since it keeps the HTML clean and easy to manage.</p>
             </section>
 
             <section>
@@ -147,10 +101,214 @@ p {
                 </section>
             </section>
 
+           
             <section>
-                <h3>Box Model</h3>
-                <p>The CSS box model consists of margins, borders, padding, and the content area.</p>
+                <h3>Basic CSS Properties Cheat Sheet</h3>
+                <p>Goal: Introduce basic properties and demonstrate how they impact different elements.</p>
             </section>
+            <section>
+                <h4>Font and Text Styling Properties:</h4>
+                <ul>
+                    <li><code>color</code> – Sets the text color.</li>
+                    <li><code>font-size</code> – Adjusts the text size.</li>
+                    <li><code>font-family</code> – Sets the font.</li>
+                    <li><code>text-align</code> – Aligns text (e.g., center, left, right).</li>
+                </ul>
+            </section>
+            <section>
+                <pre><code class="language-css">
+h1 {
+    color: teal;
+    font-size: 2em;
+    text-align: center;
+}
+p {
+    font-family: Georgia, serif;
+    line-height: 1.5;
+    color: gray;
+}
+                </code></pre>
+            </section>
+            <section>
+                <h4>Box Model Basics:</h4>
+                <ul>
+                    <li><code>padding</code> – Adds space inside the border.</li>
+                    <li><code>margin</code> – Adds space outside the element.</li>
+                    <li><code>border</code> – Adds a border around the element.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Inline CSS</h3>
+                <p>Apply quick styles directly within HTML tags to see how CSS affects the elements instantly.</p>
+            </section>
+            <section>
+                <h4>Inline CSS Example:</h4>
+                <pre><code class="language-html">
+&lt;h1 style="color: navy; text-align: center;"&gt;Your Name&lt;/h1&gt;
+&lt;p style="color: gray; font-size: 16px;"&gt;A short bio paragraph about yourself.&lt;/p&gt;
+                </code></pre>
+            </section>
+            <section>
+                <p>Here, we styled the <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code> tags by adding the <code>style</code> attribute directly to them.</p>
+            </section>
+            <section>
+                <h4>Explanation:</h4>
+                <ul>
+                    <li><code>color: navy;</code> sets the text color.</li>
+                    <li><code>text-align: center;</code> centers the text.</li>
+                    <li><code>font-size: 16px;</code> adjusts the text size.</li>
+                </ul>
+            </section>
+            <section>
+                <h4>Pros & Cons of Inline CSS:</h4>
+                <ul>
+                    <li>Pros: Quick to add, great for testing small changes.</li>
+                    <li>Cons: Difficult to maintain on larger pages.</li>
+                </ul>
+            </section>
+
+
+            <section>
+                <section>
+                    <h3>Internal CSS</h3>
+                    <h4>Grouping Styles in the <code>&lt;head&gt;</code></h4>
+                    <p>Apply CSS within the HTML <code>&lt;head&gt;</code> to style elements without repeating code.</p>
+                </section>
+                <section>
+                    <h5>Adding Internal CSS:</h5>
+                    <pre><code class="language-html">
+&lt;head&gt;
+    &lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+        p {
+            color: gray;
+            font-size: 16px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+                    </code></pre>
+                </section>
+                <section>
+                    <p>Explanation:</p>
+                    <ul>
+                        <li>This CSS code is inside a <code>&lt;style&gt;</code> tag within the HTML <code>&lt;head&gt;</code>.</li>
+                        <li><code>body</code> selector applies a font to the entire page.</li>
+                        <li><code>h1</code> styles all headings in dark blue and centers them.</li>
+                        <li><code>p</code> makes all paragraph text gray and slightly larger.</li>
+                    </ul>
+                </section>
+                <section>
+                    <p>Advantages of Internal CSS:</p>
+                    <ul>
+                        <li>Keeps styles together, making it easy to adjust page-wide styling.</li>
+                    </ul>
+                </section>
+            </section>
+
+            
+            <section>
+                <h4>External CSS - Organizing Styles in a Separate File</h4>
+                <p>Goal: Move CSS into an external file to simplify and organize code for larger projects.</p>
+            </section>
+            <section>
+                <h5>Create a styles.css file:</h5>
+                <pre><code class="language-css">
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+p {
+    font-size: 1em;
+    color: #555;
+}
+                </code></pre>
+            </section>
+            <section>
+                <h5>Link styles.css to HTML:</h5>
+                <pre><code class="language-html">
+&lt;head&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+                </code></pre>
+            </section>
+            
+
+
+            <section>
+                <h4>Exercise</h4>
+                <p>Change the text color of the element with id="para1" to red.</p>
+                <pre><code class="language-html">
+&lt;style&gt;
+# {
+    : red;
+}
+&lt;/style&gt;
+&lt;body&gt;
+    &lt;h1&gt;This is a heading&lt;/h1&gt;
+    &lt;p id="para1"&gt;This is a paragraph&lt;/p&gt;
+&lt;/body&gt;
+                </code></pre>
+            </section>
+            <section>
+                <h4>Exercise</h4>
+                <p>Goal: Link an external style sheet with the URL "mystyle.css" to the HTML document.</p>
+                <pre><code class="language-html">
+&lt;head&gt;
+   
+&lt;/head&gt;
+                </code></pre>
+            </section>
+            <section>
+                <section>
+                    <h4>Exercise</h4>
+                    <p>Change the background color of the HTML document to red.</p>
+                    <pre><code class="language-html">
+&lt;style&gt;
+ {
+    
+}
+&lt;/style&gt;
+&lt;body&gt;
+    &lt;h1&gt;This is a heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph&lt;/p&gt;
+    &lt;p&gt;This is a paragraph&lt;/p&gt;
+&lt;/body&gt;
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h4>Exercise</h4>
+                    <p>Set the page's text to green using inline style.</p>
+                    <pre><code class="language-html">
+&lt;body&gt;
+    &lt;h1&gt;This is a heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph&lt;/p&gt;
+    &lt;p&gt;This is a paragraph&lt;/p&gt;
+&lt;/body&gt;
+                    </code></pre>
+                </section>
+                <section>
+                    <h4>Exercise</h4>
+                    <p>Goal: Correct the CSS code to set the color of paragraphs to blue.</p>
+                    <pre><code class="language-html">
+&lt;style&gt;
+
+&lt;/style&gt;
+                    </code></pre>
+                </section>
 
             <section>
                 <section>
